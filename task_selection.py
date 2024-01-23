@@ -1,6 +1,6 @@
 import pulp
 
-def HSP(bian, N=6, k=3):
+def HSP(bian, N, k):
     E = [(i, j) for i in range(N) for j in range(i+1,N)]
 
     W = {(i, j): bian[i][j] for (i, j) in E}
